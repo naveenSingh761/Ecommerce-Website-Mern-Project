@@ -1,0 +1,10 @@
+node_modules
+build/
+dist/
+.env
+.DS_Store
+
+
+b_end/Config/
+b_end/ZZPracticeFolder/
+b_end/Colors.txt/

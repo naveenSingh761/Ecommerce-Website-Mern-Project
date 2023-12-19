@@ -1,0 +1,318 @@
+
+//create a router
+const router = new express.Router();
+// we need to define the router
+router.get();
+
+//we need to resgister our router
+app.use(router);
+
+
+
+mkdir Component/
+new-item index.jsx
+new-item index.css
+new-item App.jsx
+new-item App.css
+new-item App.jsx
+new-item App.css
+new-item Menu.jsx
+new-item Menu.css
+
+new-item Addbook.jsx
+new-item Editbook.jsx
+new-item Requestbook.jsx
+new-item Deletebook.jsx
+new-item Findall.jsx
+
+new-item Addbook.css
+new-item Editbook.css
+new-item Requestbook.css
+new-item Deletebook.css
+new-item Findall.css
+
+
+
+
+
+App
+
+
+ {
+  "name": "welcome to cs world",
+  "title": "for beginner to programmer",
+  "author": "Naveen Singh",
+  "pages": 1000,
+  "publishYear": 2025
+ }
+
+
+ Advanced programmming
+
+   const output = Object.entries(lol)
+    .map(([key, value]) => `${key}_${value} &  `)
+    .join("");
+  console.log(output);
+
+  for (const key in lol) {
+    const value = lol[key];
+    console.log(`${key}: ${value}`);
+  }
+
+  
+const Jwt = require("jsonwebtoken");
+
+const createtoken = async (req, res) => {
+  const secretKey = "?>78847585/'.][0-=,.254..=|/*";
+  const token = await Jwt.sign({ name: "naveen Singh", age: 25 }, secretKey, {
+    expiresIn: "6 second",
+  });
+  console.log(`dbhelper.js => Line number: 84 =>  ${token}`);
+
+    setTimeout(async () => {
+      try {
+        const { name, age } = await Jwt.verify(token, secretKey);
+        console.log(await Jwt.verify(token, secretKey));
+        console.log(` name_ ${name} && age_ ${age}`);
+      } catch (error) {
+        console.log(`dbhelper.js => Line number: 89 =>  ${error}`);
+      }
+    }, 1000);
+  
+};
+
+createtoken();
+
+
+--------------------------------------------------------------------
+const createtoken = async (req, res) => {
+  const secretKey = "?>78847585/'.][0-=,.254..=|/*";
+  const token = await Jwt.sign({ name: "naveen Singh", age: 25 }, secretKey, {
+    expiresIn: "2 second",
+  });
+  console.log(`dbhelper.js => Line number: 84 =>  ${token}`);
+
+  try {
+    setTimeout(async () => {
+      const { name, age } = await Jwt.verify(token, secretKey);
+      console.log(await Jwt.verify(token, secretKey));
+      console.log(` name_ ${name} && age_ ${age}`);
+    }, 5000);
+  } catch (error) {
+    console.log( error  );
+  }
+
+
+};
+
+createtoken();
+why app is crashed instead logging the error
+ChatGPT
+In the code you provided, you are using asynchronous functions (Jwt.sign and Jwt.verify) and a 
+setTimeout inside an async function (createtoken). When an unhandled exception occurs inside a
+ setTimeout callback, it doesn't propagate back to the main execution context, and it won't be
+  caught by your try...catch block.
+
+ When an unhandled exception occurs inside a setTimeout callback, why it doesn't propagate 
+ back to the main execution context ?
+When an unhandled exception occurs inside a setTimeout callback (or any asynchronous callback 
+ like those used with setInterval, event handlers, or Promises), it doesn't propagate back to the 
+ main execution context by default. This behavior is by design and is related to how JavaScript handles 
+ asynchronous code execution.
+
+Here's why unhandled exceptions inside asynchronous callbacks behave this way:
+
+accessing Object
+Object.entries(temp).map( ([key ,value]) => {
+  console.log( `${key } => ${value}`  );
+
+})
+
+
+name ="name"
+name ="title"
+name ="author"
+name ="pages"
+name ="publishYear"
+
+Name
+Title
+Author
+Pages
+PublishYear
+
+
+
+  name
+  bookTitle
+  bookAuthor
+  bookPages
+  bookPublishYear
+  bookAddinfo
+
+ <FormGroup>
+    <Label for="bookAddinfo">
+      Remark
+    </Label>
+    <Input
+      id="bookAddinfo"
+      name="text"
+      type="textarea"
+      placeholder="Add Additional Information "
+    />
+  </FormGroup>
+
+
+
+
+ <FormGroup>
+          <Label for="name">Name</Label>
+          <Input
+            id="bookName"
+            name ="name"
+            placeholder="  Name Of Book"
+            type="text"
+          />
+          <Label for="bookTitle">Title</Label>
+          <Input
+            id="bookTitle"
+            name ="title"
+            placeholder="  Add  Title  of Book"
+            type="text"
+          />
+          <Label for="bookAuthor">Author</Label>
+          <Input
+            id="bookAuthor"
+            name ="author"
+            placeholder="  Add Author  of Book"
+            type="text"
+          />
+          <Label for="bookPages">Pages</Label>
+          <Input
+            id="bookPages"
+            name ="pages"
+            placeholder="  Add no of Pages  of Book"
+            type="text"
+          />
+          <Label for="bookPublishYear">PublishYear</Label>
+          <Input
+            id="bookPublishYear"
+            name ="publishYear"
+            placeholder="  Add PublishYear  of Book"
+            type="text"
+          />
+</FormGroup>
+
+--- very Important test feature 
+        // console.log(Object.entries(recievedData));
+---
+  Alway remember while using js in jsx & dealing with map array to render dont forget to return
+
+  <tbody>
+          {bookArray.map((ele, index) => {
+            return (
+              <tr key={ele.id}>
+                <th scope="row">{index + 1}</th>
+                <td scope="row">{ele.name}</td>
+                <td scope="row">{ele.title}</td>
+                <td scope="row">{ele.author}</td>
+              </tr>
+            );
+          })}
+   </tbody>
+
+   const dummyData = [
+  {
+    name: "Noob to Programming",
+    title: "Best In Market",
+    author: "Naveen_Singh",
+    pages: 45,
+    publishYear: 2023,
+    info: "A traditional programming guide for beginners",
+  },
+  {
+    name: "Advanced JavaScript",
+    title: "Mastering JS",
+    author: "John Doe",
+    pages: 150,
+    publishYear: 2022,
+    info: "In-depth coverage of JavaScript concepts and techniques",
+  },
+  {
+    name: "Data Science Essentials",
+    title: "Data Analytics Handbook",
+    author: "Jane Smith",
+    pages: 200,
+    publishYear: 2021,
+    info: "A comprehensive guide to data analysis and visualization",
+  },
+  {
+    name: "The Art of Cooking",
+    title: "Gourmet Cuisine",
+    author: "Alice Johnson",
+    pages: 250,
+    publishYear: 2019,
+    info: "Delicious recipes and culinary techniques for food enthusiasts",
+  },
+  {
+    name: "History of the World",
+    title: "An Epic Journey",
+    author: "Michael Brown",
+    pages: 400,
+    publishYear: 2020,
+    info: "A comprehensive overview of world history from ancient times to the present",
+  },
+  {
+    name: "The Science of Space",
+    title: "Exploring the Cosmos",
+    author: "David Anderson",
+    pages: 300,
+    publishYear: 2018,
+    info: "Discover the mysteries of the universe and space exploration",
+  },
+  {
+    name: "Fictional Adventures",
+    title: "Fantasy Tales",
+    author: "Sarah Williams",
+    pages: 180,
+    publishYear: 2021,
+    info: "Immerse yourself in a world of magical adventures and mythical creatures",
+  },
+  {
+    name: "Health and Wellness",
+    title: "Holistic Living",
+    author: "Emily Davis",
+    pages: 220,
+    publishYear: 2022,
+    info: "Achieve optimal health and well-being with holistic lifestyle practices",
+  },
+  {
+    name: "Financial Success Strategies",
+    title: "Wealth Building Secrets",
+    author: "Robert Johnson",
+    pages: 280,
+    publishYear: 2017,
+    info: "Learn effective financial strategies to build wealth and financial security",
+  },
+  {
+    name: "Travel Guide to Europe",
+    title: "European Adventures",
+    author: "Lisa Wilson",
+    pages: 320,
+    publishYear: 2019,
+    info: "Explore the beauty and culture of Europe with this travel guide",
+  },
+]
+
+
+Addbook.jsx => Line number: 8 =>  sdata 
+ 651db09d843eca445b2a7a94
+Addbook.jsx => Line number: 8 =>  sdata 
+ undefined
+
+
+defaultValue={updateBook !== null ? updateBook.title : ""}
+defaultValue={updateBook !== null ? updateBook.author : ""}
+defaultValue={updateBook !== null ? updateBook.pages : ""}
+defaultValue={updateBook !== null ? updateBook.publishYear : ""}
+defaultValue={updateBook !== null ? updateBook.info : ""}

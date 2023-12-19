@@ -1,0 +1,64 @@
+body,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  // font-size: clamp(14px, 4vmin, 30px) !important;
+  &::-webkit-scrollbar {
+    width:4px;
+    // height: 5px;
+    background-color: rgb(107, 105, 106);
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #ff5d5d;
+    border-radius: 10px;
+  }
+  font-family: Playpen Sans;
+  
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: clamp(16px, 4vmin, 20px) !important;
+
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+div{
+  font-size: clamp(16px, 4vmin, 25px) !important;
+
+}
+
+p ,label ,input ,select, button{
+  font-size: clamp(12px, 3.5vmin, 18px) !important;
+  margin: 0;
+  padding: 0;
+
+  
+} 
+
+
+input{
+  border: none;
+  outline: none;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

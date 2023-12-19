@@ -1,0 +1,117 @@
+{
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/*.git": true,
+    "**/node_modules": true,
+    "**/.vscode": true,
+    "Frontend": true
+  },
+  "explorerExclude.backup": {},
+  "better-comments.tags": [
+    {
+      "tag": "!",
+      "color": "white",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "fireBrick",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "?",
+      "color": "white",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "mediumSlateBlue",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "//",
+      "color": "white",
+      "strikethrough": true,
+      "underline": false,
+      "backgroundColor": "darkOliveGreen",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "todo",
+      "color": "white",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "chocolate",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "*",
+      "color": "white",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "maroon",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "=",
+      "color": "black",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "lime",
+      "bold": true,
+      "italic": false
+    },
+
+    {
+      "tag": "/",
+      "color": "white",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": true,
+      "italic": false
+    },
+    {
+      "tag": "pink",
+      "color": "black",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "deepPink",
+      "bold": true,
+      "italic": false
+    },
+    {
+      "tag": "purple",
+      "color": "white",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "indigo",
+      "bold": true,
+      "italic": false
+    },
+    {
+      "tag": "lime",
+      "color": "black",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "lime",
+      "bold": true,
+      "italic": false
+    },
+    {
+      "tag": "gold",
+      "color": "black",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "gold",
+      "bold": true,
+      "italic": false
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+ @import  "variable";
+ 
+ @mixin standard($x: 100%, $y: 100vh) {
+    width: $x;
+    height: $y;
+  }
+  
+  @mixin flex($dir: row, $jc: center, $ai: center, $gap: 0rem) {
+    display: flex;
+  
+    @if ($dir ==0) {
+      flex-direction: row;
+    } @else {
+      flex-direction: $dir;
+    }
+  
+    @if ($jc ==0) {
+      justify-content: center;
+    } @else {
+      justify-content: $jc;
+    }
+  
+    @if ($ai ==0) {
+      align-items: center;
+    } @else {
+      align-items: $ai;
+    }
+  
+    @if ($gap ==0) {
+      gap: 0rem;
+    } @else {
+      gap: $gap;
+    }
+  }
+  
+  @mixin bd($wid: 1px, $color: #000) {
+    border: $wid solid $color;
+  }
+  
+  @mixin fp($x: 1rem, $y: 500) {
+    font-size: $x !important;
+    font-weight: $y !important;
+  }
+  
+  @mixin posCenter() {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  @mixin button($color:rebeccapurple ,$p:1rem,$c2:rgb(0, 51, 254) , $rad:1rem ) { 
+    @if ($color == 0  ) {
+    color:rebeccapurple ;
+
+    } @else {
+    color:$color ;
+
+    }
+
+
+     @if ($p ==0) {
+    padding: 0.05rem  1rem;
+    } @else {
+       padding: 0.15*$p  $p ;
+    }
+    @if ( $rad ==0) {
+    border-radius: 0.7rem;
+    } @else {
+      border-radius: 0.7*$rad;
+    }
+    
+
+   
+
+
+    box-sizing: none !important;
+    background-image: $backImage3;
+    height: fit-content;
+    width: fit-content;
+    // padding: 0.15*$p  $p ;
+    // border-radius: 0.7*$p;
+    transition: all 0.5s;
+    @include textshadow(1px,rgb(255, 116, 116))  ; 
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px 3px 0px inset;
+
+    &:hover {
+      border-color: white;
+    }
+  }
+
+  @mixin textshadow($spread:2px , $color:rgb(98, 98, 98)) {
+    text-shadow: 0px 0px $spread $color;
+  }
+ 
